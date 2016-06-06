@@ -1,0 +1,15 @@
+.\mb.o: ..\Modbus\mb.c
+.\mb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\mb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\mb.o: ..\Modbus\include\port.h
+.\mb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\mb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\mb.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\mb.o: ..\Modbus\include\mb.h
+.\mb.o: ..\Modbus\include\mbport.h
+.\mb.o: ..\Modbus\include\mbproto.h
+.\mb.o: ..\Modbus\include\mbconfig.h
+.\mb.o: ..\Modbus\include\mbframe.h
+.\mb.o: ..\Modbus\include\mbfunc.h
+.\mb.o: ..\Modbus\include\mbrtu.h
+.\mb.o: ..\Modbus\include\mbascii.h

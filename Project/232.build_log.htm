@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yu PC, Microsoft, LIC=BUUUH-WF1SH-QDDKD-8FIU9-BZKPE-I3WHK
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DCM.DLL V1.13.6.0
+Target DLL:      UL2CM3.DLL V1.157.5.0
+Dialog DLL:      TCM.DLL V1.14.8.0
+ 
+<h2>Project:</h2>
+C:\Users\PC\Desktop\modbus232_test\Project\232.uvprojx
+Project File Date:  05/15/2016
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'modbus232'
+compiling mbfunccoils.c...
+compiling mbascii.c...
+..\Modbus\ascii\mbascii.c(134): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+      vMBPortSerialEnable( TRUE, FALSE );
+..\Modbus\ascii\mbascii.c(146): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+      vMBPortSerialEnable( FALSE, FALSE );
+..\Modbus\ascii\mbascii.c(211): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+          vMBPortSerialEnable( FALSE, TRUE );
+..\Modbus\ascii\mbascii.c(395): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+          vMBPortSerialEnable( TRUE, FALSE );
+..\Modbus\ascii\mbascii.c: 4 warnings, 0 errors
+compiling mbfuncdisc.c...
+compiling main.c...
+compiling mbfuncholding.c...
+compiling mbfuncinput.c...
+compiling mbfuncother.c...
+compiling mbutils.c...
+compiling portevent.c...
+compiling port.c...
+compiling portserial.c...
+compiling porttimer.c...
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(135): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+      vMBPortSerialEnable( TRUE, FALSE );
+..\Modbus\rtu\mbrtu.c(145): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+      vMBPortSerialEnable( FALSE, FALSE );
+..\Modbus\rtu\mbrtu.c(221): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+          vMBPortSerialEnable( FALSE, TRUE );
+..\Modbus\rtu\mbrtu.c(304): warning:  #223-D: function "vMBPortSerialEnable" declared implicitly
+          vMBPortSerialEnable( TRUE, FALSE );
+..\Modbus\rtu\mbrtu.c(355): warning:  #127-D: expected a statement
+      }
+..\Modbus\rtu\mbrtu.c: 6 warnings, 0 errors
+compiling mb.c...
+linking...
+.\232.axf: Error: L6218E: Undefined symbol prvvTIMERExpiredISR (referred from stm32f10x_it.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+".\232.axf" - 1 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\PC\Desktop\modbus232_test\Project\RTE
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\Keil_v5\ARM\PACK\ARM\CMSIS\4.5.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+Target not created.
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

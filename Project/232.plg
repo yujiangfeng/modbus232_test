@@ -1,0 +1,1992 @@
+<html>
+<body>
+<pre>
+<h1>╡Vision Build Log</h1>
+<h2>Project:</h2>
+E:\company\project\test\modbus232_test\Project\232.uvproj
+Project File Date:  05/20/2013
+
+<h2>Output:</h2>
+Build target 'modbus232'
+assembling startup_stm32f10x_hd.s...
+compiling system_stm32f10x.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\CMSIS\system_stm32f10x.c: 0 warnings, 1 error
+compiling core_cm3.c...
+compiling misc.c...
+..\Std_Driver\src\misc.c(24): error:  #5: cannot open source input file "misc.h": No such file or directory
+..\Std_Driver\src\misc.c:   #include "misc.h"
+..\Std_Driver\src\misc.c:                    ^
+..\Std_Driver\src\misc.c: ..\Std_Driver\src\misc.c: 0 warnings, 1 error
+compiling stm32f10x_usart.c...
+..\Std_Driver\src\stm32f10x_usart.c(133): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(178): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t tmpreg = 0x00, apbclock = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(179): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t integerdivider = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(180): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t fractionaldivider = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(181): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t usartxbase = 0;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(184): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(197): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     usartxbase = (uint32_t)USARTx;
+..\Std_Driver\src\stm32f10x_usart.c:                   ^
+..\Std_Driver\src\stm32f10x_usart.c(197): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     usartxbase = (uint32_t)USARTx;
+..\Std_Driver\src\stm32f10x_usart.c:                            ^
+..\Std_Driver\src\stm32f10x_usart.c(202): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_STOP_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(202): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_STOP_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(205): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_InitStruct->USART_StopBits;
+..\Std_Driver\src\stm32f10x_usart.c:                         ^
+..\Std_Driver\src\stm32f10x_usart.c(208): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR2 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(213): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR1_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(218): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_InitStruct->USART_WordLength | USART_InitStruct->USART_Parity |
+..\Std_Driver\src\stm32f10x_usart.c:                         ^
+..\Std_Driver\src\stm32f10x_usart.c(221): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR1 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(226): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR3_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(231): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR3 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(264): error:  #20: identifier "uint8_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 8) + 50) / 100)) & ((uint8_t)0x07);
+..\Std_Driver\src\stm32f10x_usart.c:                                                              ^
+..\Std_Driver\src\stm32f10x_usart.c(264): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 8) + 50) / 100)) & ((uint8_t)0x07);
+..\Std_Driver\src\stm32f10x_usart.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_usart.c(268): error:  #20: identifier "uint8_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 16) + 50) / 100)) & ((uint8_t)0x0F);
+..\Std_Driver\src\stm32f10x_usart.c:                                                               ^
+..\Std_Driver\src\stm32f10x_usart.c(268): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 16) + 50) / 100)) & ((uint8_t)0x0F);
+..\Std_Driver\src\stm32f10x_usart.c:                                                                       ^
+..\Std_Driver\src\stm32f10x_usart.c(272): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->BRR = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(304): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t tmpreg = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(306): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(315): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_CLOCK_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(315): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_CLOCK_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(321): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_ClockInitStruct->USART_Clock | USART_ClockInitStruct->USART_CPOL | 
+..\Std_Driver\src\stm32f10x_usart.c:                ^
+..\Std_Driver\src\stm32f10x_usart.c(321): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_ClockInitStruct->USART_Clock | USART_ClockInitStruct->USART_CPOL | 
+..\Std_Driver\src\stm32f10x_usart.c:                         ^
+..\Std_Driver\src\stm32f10x_usart.c(324): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR2 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(354): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(360): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 |= CR1_UE_Set;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c(360): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 |= CR1_UE_Set;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c(365): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 &= CR1_UE_Reset;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c(365): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 &= CR1_UE_Reset;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c: ..\Std_Driver\src\stm32f10x_usart.c: 4 warnings, 30 errors
+compiling stm32f10x_tim.c...
+..\Std_Driver\src\stm32f10x_tim.c(77): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI1_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(77): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI1_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(78): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(79): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI2_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(79): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI2_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(80): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(81): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI3_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(81): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI3_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(82): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(83): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI4_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(83): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI4_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(84): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(125): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(167): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM9)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(169): error:  #20: identifier "RCC_APB2Periph_TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM9, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(172): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM10)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(174): error:  #20: identifier "RCC_APB2Periph_TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM10, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(177): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM11) 
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(179): error:  #20: identifier "RCC_APB2Periph_TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM11, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(182): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM12)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(184): error:  #20: identifier "RCC_APB1Periph_TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM12, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(187): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM13) 
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(189): error:  #20: identifier "RCC_APB1Periph_TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM13, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(192): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM14) 
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(194): error:  #20: identifier "RCC_APB1Periph_TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM14, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(197): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM15)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(199): error:  #20: identifier "RCC_APB2Periph_TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM15, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(202): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM16)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(204): error:  #20: identifier "RCC_APB2Periph_TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM16, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(209): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       if (TIMx == TIM17)
+..\Std_Driver\src\stm32f10x_tim.c:                   ^
+..\Std_Driver\src\stm32f10x_tim.c(211): error:  #20: identifier "RCC_APB2Periph_TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:         RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM17, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                                ^
+..\Std_Driver\src\stm32f10x_tim.c: ..\Std_Driver\src\stm32f10x_tim.c: 1 warning, 30 errors
+compiling main.c...
+..\User\src\main.c(13): error:  #5: cannot open source input file "stm32f10.h": No such file or directory
+..\User\src\main.c:   #include "stm32f10.h"
+..\User\src\main.c:                        ^
+..\User\src\main.c: ..\User\src\main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling mbascii.c...
+..\Modbus\ascii\mbascii.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\ascii\mbascii.c:   #include "port.h"
+..\Modbus\ascii\mbascii.c:                    ^
+..\Modbus\ascii\mbascii.c: ..\Modbus\ascii\mbascii.c: 0 warnings, 1 error
+compiling mbfunccoils.c...
+..\Modbus\functions\mbfunccoils.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\functions\mbfunccoils.c:   #include "port.h"
+..\Modbus\functions\mbfunccoils.c:                    ^
+..\Modbus\functions\mbfunccoils.c: ..\Modbus\functions\mbfunccoils.c: 0 warnings, 1 error
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+..\Modbus\functions\mbfuncdisc.c(27): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\functions\mbfuncdisc.c:   #include "port.h"
+..\Modbus\functions\mbfuncdisc.c:                    ^
+..\Modbus\functions\mbfuncdisc.c: ..\Modbus\functions\mbfuncdisc.c: 0 warnings, 1 error
+compiling mbfuncholding.c...
+..\Modbus\functions\mbfuncholding.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\functions\mbfuncholding.c:   #include "port.h"
+..\Modbus\functions\mbfuncholding.c:                    ^
+..\Modbus\functions\mbfuncholding.c: ..\Modbus\functions\mbfuncholding.c: 0 warnings, 1 error
+compiling mbfuncinput.c...
+..\Modbus\functions\mbfuncinput.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\functions\mbfuncinput.c:   #include "port.h"
+..\Modbus\functions\mbfuncinput.c:                    ^
+..\Modbus\functions\mbfuncinput.c: ..\Modbus\functions\mbfuncinput.c: 0 warnings, 1 error
+compiling mbfuncother.c...
+..\Modbus\functions\mbfuncother.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\functions\mbfuncother.c:   #include "port.h"
+..\Modbus\functions\mbfuncother.c:                    ^
+..\Modbus\functions\mbfuncother.c: ..\Modbus\functions\mbfuncother.c: 0 warnings, 1 error
+compiling mbutils.c...
+..\Modbus\functions\mbutils.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\functions\mbutils.c:   #include "port.h"
+..\Modbus\functions\mbutils.c:                    ^
+..\Modbus\functions\mbutils.c: ..\Modbus\functions\mbutils.c: 0 warnings, 1 error
+compiling port.c...
+..\Modbus\port\port.c(2): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\port.c:   #include "mb.h" 
+..\Modbus\port\port.c:                   ^
+..\Modbus\port\port.c: ..\Modbus\port\port.c: 0 warnings, 1 error
+compiling portevent.c...
+..\Modbus\port\portevent.c(23): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\portevent.c:   #include "mb.h"
+..\Modbus\port\portevent.c:                  ^
+..\Modbus\port\portevent.c: ..\Modbus\port\portevent.c: 0 warnings, 1 error
+compiling portserial.c...
+..\Modbus\port\portserial.c(25): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\portserial.c:   #include "mb.h"
+..\Modbus\port\portserial.c:                  ^
+..\Modbus\port\portserial.c: ..\Modbus\port\portserial.c: 0 warnings, 1 error
+compiling porttimer.c...
+..\Modbus\port\porttimer.c(25): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\porttimer.c:   #include "mb.h"
+..\Modbus\port\porttimer.c:                  ^
+..\Modbus\port\porttimer.c: ..\Modbus\port\porttimer.c: 0 warnings, 1 error
+compiling mbcrc.c...
+..\Modbus\rtu\mbcrc.c(32): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\rtu\mbcrc.c:   #include "port.h"
+..\Modbus\rtu\mbcrc.c:                    ^
+..\Modbus\rtu\mbcrc.c: ..\Modbus\rtu\mbcrc.c: 0 warnings, 1 error
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\rtu\mbrtu.c:   #include "port.h"
+..\Modbus\rtu\mbrtu.c:                    ^
+..\Modbus\rtu\mbrtu.c: ..\Modbus\rtu\mbrtu.c: 0 warnings, 1 error
+compiling mb.c...
+..\Modbus\mb.c(36): error:  #5: cannot open source input file "port.h": No such file or directory
+..\Modbus\mb.c:   #include "port.h"
+..\Modbus\mb.c:                    ^
+..\Modbus\mb.c: ..\Modbus\mb.c: 0 warnings, 1 error
+Target not created
+Build target 'modbus232'
+compiling system_stm32f10x.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\CMSIS\system_stm32f10x.c: 0 warnings, 1 error
+compiling core_cm3.c...
+compiling misc.c...
+..\Std_Driver\src\misc.c(99): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(117): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(159): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(178): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_NVIC_LP(LowPowerMode));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(202): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c: ..\Std_Driver\src\misc.c: 5 warnings, 0 errors
+compiling stm32f10x_usart.c...
+..\Std_Driver\src\stm32f10x_usart.c(133): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(184): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(306): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(354): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(393): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(451): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(479): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(502): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(521): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(550): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(569): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(595): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(612): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(628): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(644): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(664): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(683): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(708): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));  
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(734): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(765): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(792): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(821): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(840): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(878): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(926): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(961): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(1034): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c: ..\Std_Driver\src\stm32f10x_usart.c: 27 warnings, 0 errors
+compiling stm32f10x_tim.c...
+..\Std_Driver\src\stm32f10x_tim.c(125): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(367): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(367): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(367): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(367): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c: ..\Std_Driver\src\stm32f10x_tim.c: 4 warnings, 30 errors
+compiling main.c...
+..\User\src\main.c(13): error:  #5: cannot open source input file "stm32f10.h": No such file or directory
+..\User\src\main.c:   #include "stm32f10.h"
+..\User\src\main.c:                        ^
+..\User\src\main.c: ..\User\src\main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling mbascii.c...
+..\Modbus\ascii\mbascii.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\ascii\mbascii.c:   #include "mb.h"
+..\Modbus\ascii\mbascii.c:                  ^
+..\Modbus\ascii\mbascii.c: ..\Modbus\ascii\mbascii.c: 0 warnings, 1 error
+compiling mbfunccoils.c...
+..\Modbus\functions\mbfunccoils.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\functions\mbfunccoils.c:   #include "mb.h"
+..\Modbus\functions\mbfunccoils.c:                  ^
+..\Modbus\functions\mbfunccoils.c: ..\Modbus\functions\mbfunccoils.c: 0 warnings, 1 error
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+..\Modbus\functions\mbfuncdisc.c(30): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\functions\mbfuncdisc.c:   #include "mb.h"
+..\Modbus\functions\mbfuncdisc.c:                  ^
+..\Modbus\functions\mbfuncdisc.c: ..\Modbus\functions\mbfuncdisc.c: 0 warnings, 1 error
+compiling mbfuncholding.c...
+..\Modbus\functions\mbfuncholding.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\functions\mbfuncholding.c:   #include "mb.h"
+..\Modbus\functions\mbfuncholding.c:                  ^
+..\Modbus\functions\mbfuncholding.c: ..\Modbus\functions\mbfuncholding.c: 0 warnings, 1 error
+compiling mbfuncinput.c...
+..\Modbus\functions\mbfuncinput.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\functions\mbfuncinput.c:   #include "mb.h"
+..\Modbus\functions\mbfuncinput.c:                  ^
+..\Modbus\functions\mbfuncinput.c: ..\Modbus\functions\mbfuncinput.c: 0 warnings, 1 error
+compiling mbfuncother.c...
+..\Modbus\functions\mbfuncother.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\functions\mbfuncother.c:   #include "mb.h"
+..\Modbus\functions\mbfuncother.c:                  ^
+..\Modbus\functions\mbfuncother.c: ..\Modbus\functions\mbfuncother.c: 0 warnings, 1 error
+compiling mbutils.c...
+..\Modbus\functions\mbutils.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\functions\mbutils.c:   #include "mb.h"
+..\Modbus\functions\mbutils.c:                  ^
+..\Modbus\functions\mbutils.c: ..\Modbus\functions\mbutils.c: 0 warnings, 1 error
+compiling port.c...
+..\Modbus\port\port.c(2): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\port.c:   #include "mb.h" 
+..\Modbus\port\port.c:                   ^
+..\Modbus\port\port.c: ..\Modbus\port\port.c: 0 warnings, 1 error
+compiling portevent.c...
+..\Modbus\port\portevent.c(23): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\portevent.c:   #include "mb.h"
+..\Modbus\port\portevent.c:                  ^
+..\Modbus\port\portevent.c: ..\Modbus\port\portevent.c: 0 warnings, 1 error
+compiling portserial.c...
+..\Modbus\port\portserial.c(25): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\portserial.c:   #include "mb.h"
+..\Modbus\port\portserial.c:                  ^
+..\Modbus\port\portserial.c: ..\Modbus\port\portserial.c: 0 warnings, 1 error
+compiling porttimer.c...
+..\Modbus\port\porttimer.c(25): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\port\porttimer.c:   #include "mb.h"
+..\Modbus\port\porttimer.c:                  ^
+..\Modbus\port\porttimer.c: ..\Modbus\port\porttimer.c: 0 warnings, 1 error
+compiling mbcrc.c...
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\rtu\mbrtu.c:   #include "mb.h"
+..\Modbus\rtu\mbrtu.c:                  ^
+..\Modbus\rtu\mbrtu.c: ..\Modbus\rtu\mbrtu.c: 0 warnings, 1 error
+compiling mb.c...
+..\Modbus\mb.c(39): error:  #5: cannot open source input file "mb.h": No such file or directory
+..\Modbus\mb.c:   #include "mb.h"
+..\Modbus\mb.c:                  ^
+..\Modbus\mb.c: ..\Modbus\mb.c: 0 warnings, 1 error
+Target not created
+Build target 'modbus232'
+compiling system_stm32f10x.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\CMSIS\system_stm32f10x.c: 0 warnings, 1 error
+compiling core_cm3.c...
+compiling misc.c...
+..\Std_Driver\src\misc.c(24): error:  #5: cannot open source input file "misc.h": No such file or directory
+..\Std_Driver\src\misc.c:   #include "misc.h"
+..\Std_Driver\src\misc.c:                    ^
+..\Std_Driver\src\misc.c: ..\Std_Driver\src\misc.c: 0 warnings, 1 error
+compiling stm32f10x_usart.c...
+..\Std_Driver\src\stm32f10x_usart.c(133): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(178): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t tmpreg = 0x00, apbclock = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(179): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t integerdivider = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(180): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t fractionaldivider = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(181): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t usartxbase = 0;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(184): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(197): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     usartxbase = (uint32_t)USARTx;
+..\Std_Driver\src\stm32f10x_usart.c:                   ^
+..\Std_Driver\src\stm32f10x_usart.c(197): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     usartxbase = (uint32_t)USARTx;
+..\Std_Driver\src\stm32f10x_usart.c:                            ^
+..\Std_Driver\src\stm32f10x_usart.c(202): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_STOP_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(202): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_STOP_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(205): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_InitStruct->USART_StopBits;
+..\Std_Driver\src\stm32f10x_usart.c:                         ^
+..\Std_Driver\src\stm32f10x_usart.c(208): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR2 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(213): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR1_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(218): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_InitStruct->USART_WordLength | USART_InitStruct->USART_Parity |
+..\Std_Driver\src\stm32f10x_usart.c:                         ^
+..\Std_Driver\src\stm32f10x_usart.c(221): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR1 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(226): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR3_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(231): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR3 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(264): error:  #20: identifier "uint8_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 8) + 50) / 100)) & ((uint8_t)0x07);
+..\Std_Driver\src\stm32f10x_usart.c:                                                              ^
+..\Std_Driver\src\stm32f10x_usart.c(264): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 8) + 50) / 100)) & ((uint8_t)0x07);
+..\Std_Driver\src\stm32f10x_usart.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_usart.c(268): error:  #20: identifier "uint8_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 16) + 50) / 100)) & ((uint8_t)0x0F);
+..\Std_Driver\src\stm32f10x_usart.c:                                                               ^
+..\Std_Driver\src\stm32f10x_usart.c(268): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       tmpreg |= ((((fractionaldivider * 16) + 50) / 100)) & ((uint8_t)0x0F);
+..\Std_Driver\src\stm32f10x_usart.c:                                                                       ^
+..\Std_Driver\src\stm32f10x_usart.c(272): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->BRR = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(304): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     uint32_t tmpreg = 0x00;
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(306): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(315): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_CLOCK_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(315): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg &= CR2_CLOCK_CLEAR_Mask;
+..\Std_Driver\src\stm32f10x_usart.c:               ^
+..\Std_Driver\src\stm32f10x_usart.c(321): error:  #20: identifier "uint32_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_ClockInitStruct->USART_Clock | USART_ClockInitStruct->USART_CPOL | 
+..\Std_Driver\src\stm32f10x_usart.c:                ^
+..\Std_Driver\src\stm32f10x_usart.c(321): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     tmpreg |= (uint32_t)USART_ClockInitStruct->USART_Clock | USART_ClockInitStruct->USART_CPOL | 
+..\Std_Driver\src\stm32f10x_usart.c:                         ^
+..\Std_Driver\src\stm32f10x_usart.c(324): error:  #65: expected a ";"
+..\Std_Driver\src\stm32f10x_usart.c:     USARTx->CR2 = (uint16_t)tmpreg;
+..\Std_Driver\src\stm32f10x_usart.c:                             ^
+..\Std_Driver\src\stm32f10x_usart.c(354): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(360): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 |= CR1_UE_Set;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c(360): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 |= CR1_UE_Set;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c(365): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 &= CR1_UE_Reset;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c(365): error:  #18: expected a ")"
+..\Std_Driver\src\stm32f10x_usart.c:       USARTx->CR1 &= CR1_UE_Reset;
+..\Std_Driver\src\stm32f10x_usart.c:                      ^
+..\Std_Driver\src\stm32f10x_usart.c: ..\Std_Driver\src\stm32f10x_usart.c: 4 warnings, 30 errors
+compiling stm32f10x_tim.c...
+..\Std_Driver\src\stm32f10x_tim.c(77): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI1_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(77): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI1_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(78): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(79): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI2_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(79): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI2_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(80): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(81): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI3_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(81): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI3_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(82): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(83): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI4_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                             ^
+..\Std_Driver\src\stm32f10x_tim.c(83): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:   static void TI4_Config(TIM_TypeDef* TIMx, uint16_t TIM_ICPolarity, uint16_t TIM_ICSelection,
+..\Std_Driver\src\stm32f10x_tim.c:                                                                      ^
+..\Std_Driver\src\stm32f10x_tim.c(84): error:  #20: identifier "uint16_t" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:                          uint16_t TIM_ICFilter);
+..\Std_Driver\src\stm32f10x_tim.c:                          ^
+..\Std_Driver\src\stm32f10x_tim.c(125): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(167): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM9)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(169): error:  #20: identifier "RCC_APB2Periph_TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM9, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(172): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM10)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(174): error:  #20: identifier "RCC_APB2Periph_TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM10, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(177): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM11) 
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(179): error:  #20: identifier "RCC_APB2Periph_TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM11, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(182): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM12)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(184): error:  #20: identifier "RCC_APB1Periph_TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM12, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(187): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM13) 
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(189): error:  #20: identifier "RCC_APB1Periph_TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM13, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(192): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM14) 
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(194): error:  #20: identifier "RCC_APB1Periph_TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB1PeriphResetCmd(RCC_APB1Periph_TIM14, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(197): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM15)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(199): error:  #20: identifier "RCC_APB2Periph_TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM15, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(202): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     else if (TIMx == TIM16)
+..\Std_Driver\src\stm32f10x_tim.c:                      ^
+..\Std_Driver\src\stm32f10x_tim.c(204): error:  #20: identifier "RCC_APB2Periph_TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM16, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                              ^
+..\Std_Driver\src\stm32f10x_tim.c(209): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:       if (TIMx == TIM17)
+..\Std_Driver\src\stm32f10x_tim.c:                   ^
+..\Std_Driver\src\stm32f10x_tim.c(211): error:  #20: identifier "RCC_APB2Periph_TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:         RCC_APB2PeriphResetCmd(RCC_APB2Periph_TIM17, ENABLE);
+..\Std_Driver\src\stm32f10x_tim.c:                                ^
+..\Std_Driver\src\stm32f10x_tim.c: ..\Std_Driver\src\stm32f10x_tim.c: 1 warning, 30 errors
+compiling main.c...
+..\User\src\main.c(13): error:  #5: cannot open source input file "stm32f10.h": No such file or directory
+..\User\src\main.c:   #include "stm32f10.h"
+..\User\src\main.c:                        ^
+..\User\src\main.c: ..\User\src\main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling mbascii.c...
+compiling mbfunccoils.c...
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+compiling mbfuncholding.c...
+compiling mbfuncinput.c...
+compiling mbfuncother.c...
+compiling mbutils.c...
+compiling port.c...
+compiling portevent.c...
+compiling portserial.c...
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                            ^
+..\Modbus\port\portserial.c(34): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+..\Modbus\port\portserial.c:   GPIO_InitTypeDef   GPIO_InitStructure;
+..\Modbus\port\portserial.c:   ^
+..\Modbus\port\portserial.c(35): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\Modbus\port\portserial.c:   USART_InitTypeDef USART_InitStructure;
+..\Modbus\port\portserial.c:   ^
+..\Modbus\port\portserial.c(36): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\Modbus\port\portserial.c:   NVIC_InitTypeDef NVIC_InitStructure;
+..\Modbus\port\portserial.c:   ^
+..\Modbus\port\portserial.c(47): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\Modbus\port\portserial.c:            ^
+..\Modbus\port\portserial.c(47): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(51): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, DISABLE); 
+..\Modbus\port\portserial.c:            ^
+..\Modbus\port\portserial.c(51): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, DISABLE); 
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(56): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_TC, ENABLE);
+..\Modbus\port\portserial.c:            ^
+..\Modbus\port\portserial.c(56): error:  #20: identifier "USART_IT_TC" is undefined
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_TC, ENABLE);
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(60): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:       USART_ITConfig(USART1, USART_IT_TC, DISABLE);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(60): error:  #20: identifier "USART_IT_TC" is undefined
+..\Modbus\port\portserial.c:       USART_ITConfig(USART1, USART_IT_TC, DISABLE);
+..\Modbus\port\portserial.c:                              ^
+..\Modbus\port\portserial.c(73): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+..\Modbus\port\portserial.c:    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+..\Modbus\port\portserial.c:    ^
+..\Modbus\port\portserial.c(73): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+..\Modbus\port\portserial.c:    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+..\Modbus\port\portserial.c:                           ^
+..\Modbus\port\portserial.c(73): error:  #20: identifier "RCC_APB2Periph_USART1" is undefined
+..\Modbus\port\portserial.c:    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+..\Modbus\port\portserial.c:                                                  ^
+..\Modbus\port\portserial.c(74): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+..\Modbus\port\portserial.c:       RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);  
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(74): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+..\Modbus\port\portserial.c:       RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);  
+..\Modbus\port\portserial.c:                              ^
+..\Modbus\port\portserial.c(78): error:  #20: identifier "GPIO_Pin_10" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(79): error:  #20: identifier "GPIO_Mode_IN_FLOATING" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+..\Modbus\port\portserial.c:                                    ^
+..\Modbus\port\portserial.c(80): warning:  #223-D: function "GPIO_Init" declared implicitly
+..\Modbus\port\portserial.c:     GPIO_Init(GPIOA, &GPIO_InitStructure);  
+..\Modbus\port\portserial.c:     ^
+..\Modbus\port\portserial.c(82): error:  #20: identifier "GPIO_Pin_9" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(83): error:  #20: identifier "GPIO_Speed_10MHz" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
+..\Modbus\port\portserial.c:                                     ^
+..\Modbus\port\portserial.c(84): error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+..\Modbus\port\portserial.c:                                    ^
+..\Modbus\port\portserial.c(88): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+..\Modbus\port\portserial.c:                                              ^
+..\Modbus\port\portserial.c(89): error:  #20: identifier "USART_StopBits_1" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_StopBits = USART_StopBits_1;
+..\Modbus\port\portserial.c:                                            ^
+..\Modbus\port\portserial.c(90): error:  #20: identifier "USART_Parity_No" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_Parity = USART_Parity_No;
+..\Modbus\port\portserial.c:                                          ^
+..\Modbus\port\portserial.c(91): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+..\Modbus\port\portserial.c:                                                       ^
+..\Modbus\port\portserial.c(92): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Modbus\port\portserial.c:                                        ^
+..\Modbus\port\portserial.c(92): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Modbus\port\portserial.c:                                                        ^
+..\Modbus\port\portserial.c(95): warning:  #223-D: function "USART_Init" declared implicitly
+..\Modbus\port\portserial.c:       USART_Init(USART1, &USART_InitStructure);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(97): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\Modbus\port\portserial.c:       USART_Cmd(USART1, ENABLE);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(103): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\Modbus\port\portserial.c:     NVIC_Init(&NVIC_InitStructure);
+..\Modbus\port\portserial.c:     ^
+..\Modbus\port\portserial.c(114): warning:  #223-D: function "USART_SendData" declared implicitly
+..\Modbus\port\portserial.c:       USART_SendData(USART1, ucByte);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(124): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\Modbus\port\portserial.c:       *pucByte = USART_ReceiveData(USART1);
+..\Modbus\port\portserial.c:                  ^
+..\Modbus\port\portserial.c: ..\Modbus\port\portserial.c: 12 warnings, 23 errors
+compiling porttimer.c...
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                            ^
+..\Modbus\port\porttimer.c(35): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+..\Modbus\port\porttimer.c:             TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+..\Modbus\port\porttimer.c:             ^
+..\Modbus\port\porttimer.c(36): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\Modbus\port\porttimer.c:     NVIC_InitTypeDef NVIC_InitStructure;
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(40): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+..\Modbus\port\porttimer.c:     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(40): error:  #20: identifier "RCC_APB1Periph_TIM4" is undefined
+..\Modbus\port\porttimer.c:     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\Modbus\port\porttimer.c:                            ^
+..\Modbus\port\porttimer.c(47): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+..\Modbus\port\porttimer.c:     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+..\Modbus\port\porttimer.c:                                             ^
+..\Modbus\port\porttimer.c(48): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(50): warning:  #223-D: function "TIM_ARRPreloadConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ARRPreloadConfig(TIM4, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(53): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\Modbus\port\porttimer.c:     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1); //ив??????ии бу????б└ио??ии
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(53): error:  #20: identifier "NVIC_PriorityGroup_1" is undefined
+..\Modbus\port\porttimer.c:     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1); //ив??????ии бу????б└ио??ии
+..\Modbus\port\porttimer.c:                              ^
+..\Modbus\port\porttimer.c(60): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\Modbus\port\porttimer.c:     NVIC_Init(&NVIC_InitStructure);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(63): warning:  #223-D: function "TIM_ClearITPendingBit" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ClearITPendingBit(TIM4,TIM_IT_Update);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(63): error:  #20: identifier "TIM_IT_Update" is undefined
+..\Modbus\port\porttimer.c:     TIM_ClearITPendingBit(TIM4,TIM_IT_Update);
+..\Modbus\port\porttimer.c:                                ^
+..\Modbus\port\porttimer.c(64): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, DISABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(66): warning:  #223-D: function "TIM_Cmd" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_Cmd(TIM4,  DISABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(75): warning:  #223-D: function "TIM_ClearITPendingBit" declared implicitly
+..\Modbus\port\porttimer.c:             TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+..\Modbus\port\porttimer.c:             ^
+..\Modbus\port\porttimer.c(75): error:  #20: identifier "TIM_IT_Update" is undefined
+..\Modbus\port\porttimer.c:             TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+..\Modbus\port\porttimer.c:                                         ^
+..\Modbus\port\porttimer.c(76): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(77): warning:  #223-D: function "TIM_SetCounter" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_SetCounter(TIM4,0x0000); 
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(78): warning:  #223-D: function "TIM_Cmd" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_Cmd(TIM4, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(85): warning:  #223-D: function "TIM_Cmd" declared implicitly
+..\Modbus\port\porttimer.c:             TIM_Cmd(TIM4, DISABLE);
+..\Modbus\port\porttimer.c:             ^
+..\Modbus\port\porttimer.c(86): warning:  #223-D: function "TIM_SetCounter" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_SetCounter(TIM4,0x0000); 
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(87): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, DISABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(87): error:  #20: identifier "TIM_IT_Update" is undefined
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, DISABLE);
+..\Modbus\port\porttimer.c:                        ^
+..\Modbus\port\porttimer.c(88): warning:  #223-D: function "TIM_ClearITPendingBit" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c: ..\Modbus\port\porttimer.c: 16 warnings, 10 errors
+compiling mbcrc.c...
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(153): warning:  #550-D: variable "xFrameReceived" was set but never used
+..\Modbus\rtu\mbrtu.c:       BOOL            xFrameReceived = FALSE;
+..\Modbus\rtu\mbrtu.c:                       ^
+..\Modbus\rtu\mbrtu.c(355): warning:  #127-D: expected a statement
+..\Modbus\rtu\mbrtu.c:       }
+..\Modbus\rtu\mbrtu.c:       ^
+..\Modbus\rtu\mbrtu.c: ..\Modbus\rtu\mbrtu.c: 2 warnings, 0 errors
+compiling mb.c...
+Target not created
+Build target 'modbus232'
+compiling system_stm32f10x.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\CMSIS\system_stm32f10x.c: 0 warnings, 1 error
+compiling core_cm3.c...
+compiling misc.c...
+..\Std_Driver\src\misc.c(99): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_NVIC_PRIORITY_GROUP(NVIC_PriorityGroup));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(117): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_FUNCTIONAL_STATE(NVIC_InitStruct->NVIC_IRQChannelCmd));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(159): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_NVIC_VECTTAB(NVIC_VectTab));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(178): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_NVIC_LP(LowPowerMode));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c(202): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\misc.c:     assert_param(IS_SYSTICK_CLK_SOURCE(SysTick_CLKSource));
+..\Std_Driver\src\misc.c:     ^
+..\Std_Driver\src\misc.c: ..\Std_Driver\src\misc.c: 5 warnings, 0 errors
+compiling stm32f10x_usart.c...
+..\Std_Driver\src\stm32f10x_usart.c(133): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(184): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(306): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(354): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(393): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(451): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(479): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(502): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(521): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(550): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(569): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(595): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(612): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(628): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(644): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(664): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(683): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(708): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_123_PERIPH(USARTx));  
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(734): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(765): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(792): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(821): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(840): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(878): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(926): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(961): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c(1034): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_usart.c:     assert_param(IS_USART_ALL_PERIPH(USARTx));
+..\Std_Driver\src\stm32f10x_usart.c:     ^
+..\Std_Driver\src\stm32f10x_usart.c: ..\Std_Driver\src\stm32f10x_usart.c: 27 warnings, 0 errors
+compiling stm32f10x_tim.c...
+..\Std_Driver\src\stm32f10x_tim.c(125): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(125): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(231): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_ALL_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM10" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM11" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM13" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM14" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM16" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(284): error:  #20: identifier "TIM17" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST8_PERIPH(TIMx));
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(367): warning:  #223-D: function "assert_param" declared implicitly
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:     ^
+..\Std_Driver\src\stm32f10x_tim.c(367): error:  #20: identifier "TIM9" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(367): error:  #20: identifier "TIM12" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c(367): error:  #20: identifier "TIM15" is undefined
+..\Std_Driver\src\stm32f10x_tim.c:     assert_param(IS_TIM_LIST6_PERIPH(TIMx)); 
+..\Std_Driver\src\stm32f10x_tim.c:                  ^
+..\Std_Driver\src\stm32f10x_tim.c: ..\Std_Driver\src\stm32f10x_tim.c: 4 warnings, 30 errors
+compiling main.c...
+..\User\src\main.c(13): error:  #5: cannot open source input file "stm32f10.h": No such file or directory
+..\User\src\main.c:   #include "stm32f10.h"
+..\User\src\main.c:                        ^
+..\User\src\main.c: ..\User\src\main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling mbascii.c...
+compiling mbfunccoils.c...
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+compiling mbfuncholding.c...
+compiling mbfuncinput.c...
+compiling mbfuncother.c...
+compiling mbutils.c...
+compiling port.c...
+compiling portevent.c...
+compiling portserial.c...
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                            ^
+..\Modbus\port\portserial.c(34): error:  #20: identifier "GPIO_InitTypeDef" is undefined
+..\Modbus\port\portserial.c:   GPIO_InitTypeDef   GPIO_InitStructure;
+..\Modbus\port\portserial.c:   ^
+..\Modbus\port\portserial.c(35): error:  #20: identifier "USART_InitTypeDef" is undefined
+..\Modbus\port\portserial.c:   USART_InitTypeDef USART_InitStructure;
+..\Modbus\port\portserial.c:   ^
+..\Modbus\port\portserial.c(36): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\Modbus\port\portserial.c:   NVIC_InitTypeDef NVIC_InitStructure;
+..\Modbus\port\portserial.c:   ^
+..\Modbus\port\portserial.c(47): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\Modbus\port\portserial.c:            ^
+..\Modbus\port\portserial.c(47): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, ENABLE);
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(51): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, DISABLE); 
+..\Modbus\port\portserial.c:            ^
+..\Modbus\port\portserial.c(51): error:  #20: identifier "USART_IT_RXNE" is undefined
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_RXNE, DISABLE); 
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(56): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_TC, ENABLE);
+..\Modbus\port\portserial.c:            ^
+..\Modbus\port\portserial.c(56): error:  #20: identifier "USART_IT_TC" is undefined
+..\Modbus\port\portserial.c:            USART_ITConfig(USART1, USART_IT_TC, ENABLE);
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(60): warning:  #223-D: function "USART_ITConfig" declared implicitly
+..\Modbus\port\portserial.c:       USART_ITConfig(USART1, USART_IT_TC, DISABLE);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(60): error:  #20: identifier "USART_IT_TC" is undefined
+..\Modbus\port\portserial.c:       USART_ITConfig(USART1, USART_IT_TC, DISABLE);
+..\Modbus\port\portserial.c:                              ^
+..\Modbus\port\portserial.c(73): warning:  #223-D: function "RCC_APB2PeriphClockCmd" declared implicitly
+..\Modbus\port\portserial.c:    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+..\Modbus\port\portserial.c:    ^
+..\Modbus\port\portserial.c(73): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+..\Modbus\port\portserial.c:    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+..\Modbus\port\portserial.c:                           ^
+..\Modbus\port\portserial.c(73): error:  #20: identifier "RCC_APB2Periph_USART1" is undefined
+..\Modbus\port\portserial.c:    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA | RCC_APB2Periph_USART1,ENABLE);
+..\Modbus\port\portserial.c:                                                  ^
+..\Modbus\port\portserial.c(74): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+..\Modbus\port\portserial.c:       RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);  
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(74): error:  #20: identifier "RCC_APB1Periph_USART2" is undefined
+..\Modbus\port\portserial.c:       RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART2, ENABLE);  
+..\Modbus\port\portserial.c:                              ^
+..\Modbus\port\portserial.c(78): error:  #20: identifier "GPIO_Pin_10" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10;
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(79): error:  #20: identifier "GPIO_Mode_IN_FLOATING" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;
+..\Modbus\port\portserial.c:                                    ^
+..\Modbus\port\portserial.c(80): warning:  #223-D: function "GPIO_Init" declared implicitly
+..\Modbus\port\portserial.c:     GPIO_Init(GPIOA, &GPIO_InitStructure);  
+..\Modbus\port\portserial.c:     ^
+..\Modbus\port\portserial.c(82): error:  #20: identifier "GPIO_Pin_9" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
+..\Modbus\port\portserial.c:                                   ^
+..\Modbus\port\portserial.c(83): error:  #20: identifier "GPIO_Speed_10MHz" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_10MHz;
+..\Modbus\port\portserial.c:                                     ^
+..\Modbus\port\portserial.c(84): error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+..\Modbus\port\portserial.c:     GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+..\Modbus\port\portserial.c:                                    ^
+..\Modbus\port\portserial.c(88): error:  #20: identifier "USART_WordLength_8b" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_WordLength = USART_WordLength_8b;
+..\Modbus\port\portserial.c:                                              ^
+..\Modbus\port\portserial.c(89): error:  #20: identifier "USART_StopBits_1" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_StopBits = USART_StopBits_1;
+..\Modbus\port\portserial.c:                                            ^
+..\Modbus\port\portserial.c(90): error:  #20: identifier "USART_Parity_No" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_Parity = USART_Parity_No;
+..\Modbus\port\portserial.c:                                          ^
+..\Modbus\port\portserial.c(91): error:  #20: identifier "USART_HardwareFlowControl_None" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
+..\Modbus\port\portserial.c:                                                       ^
+..\Modbus\port\portserial.c(92): error:  #20: identifier "USART_Mode_Rx" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Modbus\port\portserial.c:                                        ^
+..\Modbus\port\portserial.c(92): error:  #20: identifier "USART_Mode_Tx" is undefined
+..\Modbus\port\portserial.c:       USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;
+..\Modbus\port\portserial.c:                                                        ^
+..\Modbus\port\portserial.c(95): warning:  #223-D: function "USART_Init" declared implicitly
+..\Modbus\port\portserial.c:       USART_Init(USART1, &USART_InitStructure);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(97): warning:  #223-D: function "USART_Cmd" declared implicitly
+..\Modbus\port\portserial.c:       USART_Cmd(USART1, ENABLE);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(103): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\Modbus\port\portserial.c:     NVIC_Init(&NVIC_InitStructure);
+..\Modbus\port\portserial.c:     ^
+..\Modbus\port\portserial.c(114): warning:  #223-D: function "USART_SendData" declared implicitly
+..\Modbus\port\portserial.c:       USART_SendData(USART1, ucByte);
+..\Modbus\port\portserial.c:       ^
+..\Modbus\port\portserial.c(124): warning:  #223-D: function "USART_ReceiveData" declared implicitly
+..\Modbus\port\portserial.c:       *pucByte = USART_ReceiveData(USART1);
+..\Modbus\port\portserial.c:                  ^
+..\Modbus\port\portserial.c: ..\Modbus\port\portserial.c: 12 warnings, 23 errors
+compiling porttimer.c...
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h(345): error:  #40: expected an identifier
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:   typedef enum {FALSE = 0, TRUE = !FALSE} bool;
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x.h:                            ^
+..\Modbus\port\porttimer.c(35): error:  #20: identifier "TIM_TimeBaseInitTypeDef" is undefined
+..\Modbus\port\porttimer.c:             TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+..\Modbus\port\porttimer.c:             ^
+..\Modbus\port\porttimer.c(36): error:  #20: identifier "NVIC_InitTypeDef" is undefined
+..\Modbus\port\porttimer.c:     NVIC_InitTypeDef NVIC_InitStructure;
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(40): warning:  #223-D: function "RCC_APB1PeriphClockCmd" declared implicitly
+..\Modbus\port\porttimer.c:     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(40): error:  #20: identifier "RCC_APB1Periph_TIM4" is undefined
+..\Modbus\port\porttimer.c:     RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4, ENABLE);
+..\Modbus\port\porttimer.c:                            ^
+..\Modbus\port\porttimer.c(47): error:  #20: identifier "TIM_CounterMode_Up" is undefined
+..\Modbus\port\porttimer.c:     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
+..\Modbus\port\porttimer.c:                                             ^
+..\Modbus\port\porttimer.c(48): warning:  #223-D: function "TIM_TimeBaseInit" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_TimeBaseInit(TIM4, &TIM_TimeBaseStructure);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(50): warning:  #223-D: function "TIM_ARRPreloadConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ARRPreloadConfig(TIM4, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(53): warning:  #223-D: function "NVIC_PriorityGroupConfig" declared implicitly
+..\Modbus\port\porttimer.c:     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1); //ив??????ии бу????б└ио??ии
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(53): error:  #20: identifier "NVIC_PriorityGroup_1" is undefined
+..\Modbus\port\porttimer.c:     NVIC_PriorityGroupConfig(NVIC_PriorityGroup_1); //ив??????ии бу????б└ио??ии
+..\Modbus\port\porttimer.c:                              ^
+..\Modbus\port\porttimer.c(60): warning:  #223-D: function "NVIC_Init" declared implicitly
+..\Modbus\port\porttimer.c:     NVIC_Init(&NVIC_InitStructure);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(63): warning:  #223-D: function "TIM_ClearITPendingBit" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ClearITPendingBit(TIM4,TIM_IT_Update);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(63): error:  #20: identifier "TIM_IT_Update" is undefined
+..\Modbus\port\porttimer.c:     TIM_ClearITPendingBit(TIM4,TIM_IT_Update);
+..\Modbus\port\porttimer.c:                                ^
+..\Modbus\port\porttimer.c(64): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, DISABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(66): warning:  #223-D: function "TIM_Cmd" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_Cmd(TIM4,  DISABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(75): warning:  #223-D: function "TIM_ClearITPendingBit" declared implicitly
+..\Modbus\port\porttimer.c:             TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+..\Modbus\port\porttimer.c:             ^
+..\Modbus\port\porttimer.c(75): error:  #20: identifier "TIM_IT_Update" is undefined
+..\Modbus\port\porttimer.c:             TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+..\Modbus\port\porttimer.c:                                         ^
+..\Modbus\port\porttimer.c(76): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(77): warning:  #223-D: function "TIM_SetCounter" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_SetCounter(TIM4,0x0000); 
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(78): warning:  #223-D: function "TIM_Cmd" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_Cmd(TIM4, ENABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(85): warning:  #223-D: function "TIM_Cmd" declared implicitly
+..\Modbus\port\porttimer.c:             TIM_Cmd(TIM4, DISABLE);
+..\Modbus\port\porttimer.c:             ^
+..\Modbus\port\porttimer.c(86): warning:  #223-D: function "TIM_SetCounter" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_SetCounter(TIM4,0x0000); 
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(87): warning:  #223-D: function "TIM_ITConfig" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, DISABLE);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c(87): error:  #20: identifier "TIM_IT_Update" is undefined
+..\Modbus\port\porttimer.c:     TIM_ITConfig(TIM4, TIM_IT_Update, DISABLE);
+..\Modbus\port\porttimer.c:                        ^
+..\Modbus\port\porttimer.c(88): warning:  #223-D: function "TIM_ClearITPendingBit" declared implicitly
+..\Modbus\port\porttimer.c:     TIM_ClearITPendingBit(TIM4, TIM_IT_Update);
+..\Modbus\port\porttimer.c:     ^
+..\Modbus\port\porttimer.c: ..\Modbus\port\porttimer.c: 16 warnings, 10 errors
+compiling mbcrc.c...
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(153): warning:  #550-D: variable "xFrameReceived" was set but never used
+..\Modbus\rtu\mbrtu.c:       BOOL            xFrameReceived = FALSE;
+..\Modbus\rtu\mbrtu.c:                       ^
+..\Modbus\rtu\mbrtu.c(355): warning:  #127-D: expected a statement
+..\Modbus\rtu\mbrtu.c:       }
+..\Modbus\rtu\mbrtu.c:       ^
+..\Modbus\rtu\mbrtu.c: ..\Modbus\rtu\mbrtu.c: 2 warnings, 0 errors
+compiling mb.c...
+Target not created
+Build target 'modbus232'
+compiling system_stm32f10x.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\CMSIS\system_stm32f10x.c: 0 warnings, 1 error
+compiling core_cm3.c...
+compiling misc.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\Std_Driver\src\misc.c: 0 warnings, 1 error
+compiling stm32f10x_usart.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\Std_Driver\src\stm32f10x_usart.c: 0 warnings, 1 error
+compiling stm32f10x_tim.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\Std_Driver\src\stm32f10x_tim.c: 0 warnings, 1 error
+compiling main.c...
+..\User\src\main.c(13): error:  #5: cannot open source input file "stm32f10.h": No such file or directory
+..\User\src\main.c:   #include "stm32f10.h"
+..\User\src\main.c:                        ^
+..\User\src\main.c: ..\User\src\main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling mbascii.c...
+compiling mbfunccoils.c...
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+compiling mbfuncholding.c...
+compiling mbfuncinput.c...
+compiling mbfuncother.c...
+compiling mbutils.c...
+compiling port.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\Modbus\port\port.c: 0 warnings, 1 error
+compiling portevent.c...
+compiling portserial.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\Modbus\port\portserial.c: 0 warnings, 1 error
+compiling porttimer.c...
+..\CMSIS\stm32f10x.h(96): error:  #35: #error directive: "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:    #error "Please select first the target STM32F10x device used in your application (in stm32f10x.h file)"
+..\CMSIS\stm32f10x.h:     ^
+..\CMSIS\stm32f10x.h: ..\Modbus\port\porttimer.c: 0 warnings, 1 error
+compiling mbcrc.c...
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(153): warning:  #550-D: variable "xFrameReceived" was set but never used
+..\Modbus\rtu\mbrtu.c:       BOOL            xFrameReceived = FALSE;
+..\Modbus\rtu\mbrtu.c:                       ^
+..\Modbus\rtu\mbrtu.c(355): warning:  #127-D: expected a statement
+..\Modbus\rtu\mbrtu.c:       }
+..\Modbus\rtu\mbrtu.c:       ^
+..\Modbus\rtu\mbrtu.c: ..\Modbus\rtu\mbrtu.c: 2 warnings, 0 errors
+compiling mb.c...
+Target not created
+Build target 'modbus232'
+compiling system_stm32f10x.c...
+compiling core_cm3.c...
+compiling misc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_tim.c...
+compiling main.c...
+..\User\src\main.c(13): error:  #5: cannot open source input file "stm32f10.h": No such file or directory
+..\User\src\main.c:   #include "stm32f10.h"
+..\User\src\main.c:                        ^
+..\User\src\main.c: ..\User\src\main.c: 0 warnings, 1 error
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+compiling mbascii.c...
+compiling mbfunccoils.c...
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+compiling mbfuncholding.c...
+compiling mbfuncinput.c...
+compiling mbfuncother.c...
+compiling mbutils.c...
+compiling port.c...
+compiling portevent.c...
+compiling portserial.c...
+compiling porttimer.c...
+compiling mbcrc.c...
+compiling mbrtu.c...
+..\Modbus\rtu\mbrtu.c(153): warning:  #550-D: variable "xFrameReceived" was set but never used
+..\Modbus\rtu\mbrtu.c:       BOOL            xFrameReceived = FALSE;
+..\Modbus\rtu\mbrtu.c:                       ^
+..\Modbus\rtu\mbrtu.c(355): warning:  #127-D: expected a statement
+..\Modbus\rtu\mbrtu.c:       }
+..\Modbus\rtu\mbrtu.c:       ^
+..\Modbus\rtu\mbrtu.c: ..\Modbus\rtu\mbrtu.c: 2 warnings, 0 errors
+compiling mb.c...
+Target not created
+Build target 'modbus232'
+compiling main.c...
+..\User\src\main.c(24): warning:  #951-D: return type of function "main" must be "int"
+..\User\src\main.c:   void main()
+..\User\src\main.c:        ^
+..\User\src\main.c(26): warning:  #223-D: function "eMBInit" declared implicitly
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:     ^
+..\User\src\main.c(26): error:  #20: identifier "MB_RTU" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:             ^
+..\User\src\main.c(26): error:  #20: identifier "MB_PAR_NONE" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:                                    ^
+..\User\src\main.c(27): warning:  #223-D: function "eMBEnable" declared implicitly
+..\User\src\main.c:     eMBEnable();    
+..\User\src\main.c:     ^
+..\User\src\main.c(30): warning:  #223-D: function "eMBPoll" declared implicitly
+..\User\src\main.c:             eMBPoll();      
+..\User\src\main.c:             ^
+..\User\src\main.c: ..\User\src\main.c: 4 warnings, 2 errors
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+Target not created
+Build target 'modbus232'
+compiling main.c...
+..\User\src\main.c(24): warning:  #951-D: return type of function "main" must be "int"
+..\User\src\main.c:   void main()
+..\User\src\main.c:        ^
+..\User\src\main.c(26): warning:  #223-D: function "eMBInit" declared implicitly
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:     ^
+..\User\src\main.c(26): error:  #20: identifier "MB_RTU" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:             ^
+..\User\src\main.c(26): error:  #20: identifier "MB_PAR_NONE" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:                                    ^
+..\User\src\main.c(27): warning:  #223-D: function "eMBEnable" declared implicitly
+..\User\src\main.c:     eMBEnable();    
+..\User\src\main.c:     ^
+..\User\src\main.c(30): warning:  #223-D: function "eMBPoll" declared implicitly
+..\User\src\main.c:             eMBPoll();      
+..\User\src\main.c:             ^
+..\User\src\main.c: ..\User\src\main.c: 4 warnings, 2 errors
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(26): error:  #5: cannot open source input file "function.h": No such file or directory
+..\User\src\stm32f10x_it.c:   #include "function.h"
+..\User\src\stm32f10x_it.c:                        ^
+..\User\src\stm32f10x_it.c: ..\User\src\stm32f10x_it.c: 0 warnings, 1 error
+Target not created
+Build target 'modbus232'
+compiling main.c...
+..\User\src\main.c(24): warning:  #951-D: return type of function "main" must be "int"
+..\User\src\main.c:   void main()
+..\User\src\main.c:        ^
+..\User\src\main.c(26): warning:  #223-D: function "eMBInit" declared implicitly
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:     ^
+..\User\src\main.c(26): error:  #20: identifier "MB_RTU" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:             ^
+..\User\src\main.c(26): error:  #20: identifier "MB_PAR_NONE" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:                                    ^
+..\User\src\main.c(27): warning:  #223-D: function "eMBEnable" declared implicitly
+..\User\src\main.c:     eMBEnable();    
+..\User\src\main.c:     ^
+..\User\src\main.c(30): warning:  #223-D: function "eMBPoll" declared implicitly
+..\User\src\main.c:             eMBPoll();      
+..\User\src\main.c:             ^
+..\User\src\main.c: ..\User\src\main.c: 4 warnings, 2 errors
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(57): warning:  #223-D: function "Time_Get" declared implicitly
+..\User\src\stm32f10x_it.c:             Time_Get();
+..\User\src\stm32f10x_it.c:             ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(36): error:  #1268-D: declaration aliased to undefined entity "SysTickHandler"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void SysTick_Handler(void)    __attribute__ ((alias("SysTickHandler")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(35): error:  #1268-D: declaration aliased to undefined entity "PendSVC"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void PendSV_Handler(void)     __attribute__ ((alias("PendSVC")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(34): error:  #1268-D: declaration aliased to undefined entity "SVCHandler"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void SVC_Handler(void)        __attribute__ ((alias("SVCHandler")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(33): error:  #1268-D: declaration aliased to undefined entity "DebugMonitor"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void DebugMon_Handler(void)   __attribute__ ((alias("DebugMonitor")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(32): error:  #1268-D: declaration aliased to undefined entity "UsageFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void UsageFault_Handler(void) __attribute__ ((alias("UsageFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(31): error:  #1268-D: declaration aliased to undefined entity "BusFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void BusFault_Handler(void)   __attribute__ ((alias("BusFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(30): error:  #1268-D: declaration aliased to undefined entity "MemManageException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void MemManage_Handler(void)  __attribute__ ((alias("MemManageException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(29): error:  #1268-D: declaration aliased to undefined entity "HardFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void HardFault_Handler(void)  __attribute__ ((alias("HardFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(28): error:  #1268-D: declaration aliased to undefined entity "NMIException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void NMI_Handler(void)        __attribute__ ((alias("NMIException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h: ..\User\src\stm32f10x_it.c: 1 warning, 9 errors
+Target not created
+Build target 'modbus232'
+compiling main.c...
+..\User\src\main.c(26): warning:  #223-D: function "eMBInit" declared implicitly
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:     ^
+..\User\src\main.c(26): error:  #20: identifier "MB_RTU" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:             ^
+..\User\src\main.c(26): error:  #20: identifier "MB_PAR_NONE" is undefined
+..\User\src\main.c:     eMBInit(MB_RTU, 0x01, 0, 9600, MB_PAR_NONE);
+..\User\src\main.c:                                    ^
+..\User\src\main.c(27): warning:  #223-D: function "eMBEnable" declared implicitly
+..\User\src\main.c:     eMBEnable();    
+..\User\src\main.c:     ^
+..\User\src\main.c(30): warning:  #223-D: function "eMBPoll" declared implicitly
+..\User\src\main.c:             eMBPoll();      
+..\User\src\main.c:             ^
+..\User\src\main.c: ..\User\src\main.c: 3 warnings, 2 errors
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(57): warning:  #223-D: function "Time_Get" declared implicitly
+..\User\src\stm32f10x_it.c:             Time_Get();
+..\User\src\stm32f10x_it.c:             ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(36): error:  #1268-D: declaration aliased to undefined entity "SysTickHandler"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void SysTick_Handler(void)    __attribute__ ((alias("SysTickHandler")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(35): error:  #1268-D: declaration aliased to undefined entity "PendSVC"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void PendSV_Handler(void)     __attribute__ ((alias("PendSVC")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(34): error:  #1268-D: declaration aliased to undefined entity "SVCHandler"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void SVC_Handler(void)        __attribute__ ((alias("SVCHandler")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(33): error:  #1268-D: declaration aliased to undefined entity "DebugMonitor"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void DebugMon_Handler(void)   __attribute__ ((alias("DebugMonitor")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(32): error:  #1268-D: declaration aliased to undefined entity "UsageFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void UsageFault_Handler(void) __attribute__ ((alias("UsageFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(31): error:  #1268-D: declaration aliased to undefined entity "BusFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void BusFault_Handler(void)   __attribute__ ((alias("BusFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(30): error:  #1268-D: declaration aliased to undefined entity "MemManageException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void MemManage_Handler(void)  __attribute__ ((alias("MemManageException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(29): error:  #1268-D: declaration aliased to undefined entity "HardFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void HardFault_Handler(void)  __attribute__ ((alias("HardFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(28): error:  #1268-D: declaration aliased to undefined entity "NMIException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void NMI_Handler(void)        __attribute__ ((alias("NMIException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h: ..\User\src\stm32f10x_it.c: 1 warning, 9 errors
+Target not created
+Build target 'modbus232'
+compiling main.c...
+compiling stm32f10x_it.c...
+..\User\src\stm32f10x_it.c(57): warning:  #223-D: function "Time_Get" declared implicitly
+..\User\src\stm32f10x_it.c:             Time_Get();
+..\User\src\stm32f10x_it.c:             ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(36): error:  #1268-D: declaration aliased to undefined entity "SysTickHandler"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void SysTick_Handler(void)    __attribute__ ((alias("SysTickHandler")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(35): error:  #1268-D: declaration aliased to undefined entity "PendSVC"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void PendSV_Handler(void)     __attribute__ ((alias("PendSVC")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(34): error:  #1268-D: declaration aliased to undefined entity "SVCHandler"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void SVC_Handler(void)        __attribute__ ((alias("SVCHandler")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(33): error:  #1268-D: declaration aliased to undefined entity "DebugMonitor"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void DebugMon_Handler(void)   __attribute__ ((alias("DebugMonitor")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(32): error:  #1268-D: declaration aliased to undefined entity "UsageFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void UsageFault_Handler(void) __attribute__ ((alias("UsageFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(31): error:  #1268-D: declaration aliased to undefined entity "BusFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void BusFault_Handler(void)   __attribute__ ((alias("BusFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(30): error:  #1268-D: declaration aliased to undefined entity "MemManageException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void MemManage_Handler(void)  __attribute__ ((alias("MemManageException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(29): error:  #1268-D: declaration aliased to undefined entity "HardFaultException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void HardFault_Handler(void)  __attribute__ ((alias("HardFaultException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h(28): error:  #1268-D: declaration aliased to undefined entity "NMIException"
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:   void NMI_Handler(void)        __attribute__ ((alias("NMIException")));
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h:                                                 ^
+C:\Keil\ARM\INC\ST\STM32F10x\stm32f10x_it.h: ..\User\src\stm32f10x_it.c: 1 warning, 9 errors
+Target not created
+Build target 'modbus232'
+compiling stm32f10x_it.c...
+linking...
+232.axf: Error: L6218E: Undefined symbol RCC_APB1PeriphResetCmd (referred from stm32f10x_usart.o).
+232.axf: Error: L6218E: Undefined symbol RCC_APB2PeriphResetCmd (referred from stm32f10x_usart.o).
+232.axf: Error: L6218E: Undefined symbol RCC_GetClocksFreq (referred from stm32f10x_usart.o).
+232.axf: Error: L6218E: Undefined symbol GPIO_Init (referred from portserial.o).
+232.axf: Error: L6218E: Undefined symbol RCC_APB1PeriphClockCmd (referred from portserial.o).
+232.axf: Error: L6218E: Undefined symbol RCC_APB2PeriphClockCmd (referred from portserial.o).
+232.axf: Not enough information to list image symbols.
+232.axf: Finished: 1 information, 0 warning and 6 error messages.
+Target not created
+Build target 'modbus232'
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_rcc.c...
+linking...
+232.axf: Error: L6218E: Undefined symbol GPIO_Init (referred from portserial.o).
+232.axf: Not enough information to list image symbols.
+232.axf: Finished: 1 information, 0 warning and 1 error messages.
+Target not created
+Build target 'modbus232'
+compiling stm32f10x_gpio.c...
+linking...
+Program Size: Code=12368 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Build target 'modbus232'
+linking...
+Program Size: Code=12368 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Build target 'modbus232'
+compiling stm32f10x_it.c...
+linking...
+Program Size: Code=12396 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+USB Communication Failure
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+Set JLink Project File to "E:\company\project\test\modbus232_test\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+**JLink Warning: RESET (pin 15) high, but should be low. Please check target hardware.
+**JLink Warning: No matching core found.
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+Set JLink Project File to "E:\company\project\test\modbus232_test\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+**JLink Warning: RESET (pin 15) high, but should be low. Please check target hardware.
+**JLink Warning: No matching core found.
+***JLink Error: Supply voltage too low (1 Volt is required, Measured: 0.0 Volt).
+Please check target power.
+Build target 'modbus232'
+linking...
+Program Size: Code=12396 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+Set JLink Project File to "E:\company\project\test\modbus232_test\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+Build target 'modbus232'
+linking...
+Program Size: Code=12396 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Build target 'modbus232'
+linking...
+Program Size: Code=12396 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+Set JLink Project File to "E:\company\project\test\modbus232_test\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'modbus232'
+linking...
+Program Size: Code=12396 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+Set JLink Project File to "E:\company\project\test\modbus232_test\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...
+Build target 'modbus232'
+compiling stm32f10x_it.c...
+linking...
+Program Size: Code=12460 RO-data=848 RW-data=296 ZI-data=1936  
+"232.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\company\\project\\test\\modbus232_test\\Project\\232.AXF" 
+Set JLink Project File to "E:\company\project\test\modbus232_test\Project\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.15n, compiled Jun 18 2010 19:55:09
+Firmware: J-Link ARM V8 compiled May 20 2010 17:07:46
+Hardware: V8.00
+S/N : 20100213 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFULL 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F103ZE
+VTarget = 3.313V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Hardware-Breakpoints: 6
+Software-Breakpoints: 2048
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info: ETM fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+Application running ...

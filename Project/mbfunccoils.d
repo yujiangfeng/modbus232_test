@@ -1,0 +1,12 @@
+.\mbfunccoils.o: ..\Modbus\functions\mbfunccoils.c
+.\mbfunccoils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\mbfunccoils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\mbfunccoils.o: ..\Modbus\include\port.h
+.\mbfunccoils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\assert.h
+.\mbfunccoils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\mbfunccoils.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\mbfunccoils.o: ..\Modbus\include\mb.h
+.\mbfunccoils.o: ..\Modbus\include\mbport.h
+.\mbfunccoils.o: ..\Modbus\include\mbproto.h
+.\mbfunccoils.o: ..\Modbus\include\mbframe.h
+.\mbfunccoils.o: ..\Modbus\include\mbconfig.h
